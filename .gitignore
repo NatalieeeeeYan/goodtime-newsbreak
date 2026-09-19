@@ -9,3 +9,6 @@ token.json
 .serena/
 .history/
 .pytest_cache/
+
+.claude/
+*.pytest_cache/

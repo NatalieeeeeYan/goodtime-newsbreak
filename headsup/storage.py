@@ -1,7 +1,7 @@
 from __future__ import annotations
 
 import sqlite3
-from datetime import datetime
+from datetime import datetime, timezone
 from pathlib import Path
 
 from headsup.models import Card
@@ -32,7 +32,7 @@ class Storage:
         with self.conn:
             cur = self.conn.execute(
                 "INSERT INTO cards (chat_id, event_id, json, created_at) VALUES (?, ?, ?, ?)",
-                (chat_id, card.event_id, card.model_dump_json(), datetime.now().isoformat()),
+                (chat_id, card.event_id, card.model_dump_json(), datetime.now(timezone.utc).isoformat()),
             )
         return int(cur.lastrowid)
 

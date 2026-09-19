@@ -1,0 +1,10 @@
+{
+  "name": "Nat",
+  "home": {"lat": 37.8044, "lon": -122.2712, "label": "home (Downtown Oakland)"},
+  "work": {"lat": 37.7897, "lon": -122.3972, "label": "work (SF FiDi)"},
+  "school": {"lat": 37.8716, "lon": -122.2727, "label": "school (Berkeley)"},
+  "commute_start": "08:30",
+  "preferences": ["live music", "night markets", "coffee", "no seafood"],
+  "timezone": "America/Los_Angeles",
+  "telegram_chat_id": null
+}
