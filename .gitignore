@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+*.pyc
+.env
+headsup.db
+credentials.json
+token.json
+.superpowers/
+.serena/
+.history/
+.pytest_cache/

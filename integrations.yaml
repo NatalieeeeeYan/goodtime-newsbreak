@@ -1,0 +1,6 @@
+channel: telegram
+calendar: mock
+maps: google
+reminders: scheduler
+booking: open_url
+profile: json
