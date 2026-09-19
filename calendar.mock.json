@@ -1,0 +1,7 @@
+{
+  "events": [
+    {"id": "c1", "title": "Drop kids at school", "start": "+60m", "end": "+90m", "location": "Berkeley", "geo": {"lat": 37.8716, "lon": -122.2727, "label": "school"}},
+    {"id": "c2", "title": "Zoom — client call", "start": "+8h", "end": "+9h", "location": "home"},
+    {"id": "c3", "title": "Brunch with Sam", "start": "tomorrow 11:00", "end": "tomorrow 12:30", "location": "Temescal, Oakland", "geo": {"lat": 37.8352, "lon": -122.2620, "label": "Temescal"}}
+  ]
+}

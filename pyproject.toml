@@ -1,0 +1,28 @@
+[project]
+name = "headsup"
+version = "0.1.0"
+requires-python = ">=3.12"
+dependencies = [
+    "apscheduler>=3.11.3",
+    "feedparser>=6.0.14",
+    "google-api-python-client>=2.200.0",
+    "google-auth-oauthlib>=1.4.1",
+    "httpx>=0.28.1",
+    "pydantic>=2.13.5",
+    "pydantic-ai-slim[openai]>=2.46.0",
+    "python-dotenv>=1.2.3",
+    "python-telegram-bot>=22.8",
+    "pyyaml>=6.0.3",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
+    "pytest-asyncio>=1.4.0",
+]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+markers = ["llm: needs a real LLM"]
+testpaths = ["tests"]
+pythonpath = ["."]
